@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(to right, #000000, #1f1f1f);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.menu-section {
+    padding: 40px;
+}
+
+.menu-section h2 {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card {
+    min-width: 250px;
+    height: 140px;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    background-color: #e50914;
+}
+
+.disabled {
+    background-color: #333;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.disabled span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        min-width: 200px;
+        height: 120px;
+    }
+
+    iframe {
+        height: 350px;
+    }
+}
